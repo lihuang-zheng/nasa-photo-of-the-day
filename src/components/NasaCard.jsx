@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/NasaCards.css";
+import NasaCardStyle from "../styles/NasaCardStyle";
 
 function NasaCard(props) {
   return (
