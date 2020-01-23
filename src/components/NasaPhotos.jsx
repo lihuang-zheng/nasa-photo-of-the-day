@@ -8,7 +8,7 @@ function NasaPhotos() {
   useEffect(() => {
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=p0sroxHu6zuv6T7HoksMfjCXaoOfNxl4zcxxCs5O&start_date=2020-01-09&end_date=2020-01-22`
+        `https://api.nasa.gov/planetary/apod?api_key=p0sroxHu6zuv6T7HoksMfjCXaoOfNxl4zcxxCs5O&start_date=2020-01-15&end_date=2020-01-22`
       )
       .then(response => {
         console.log(response.data);
@@ -27,6 +27,7 @@ function NasaPhotos() {
             date={photo.date}
             description={photo.explanation}
             img={photo.url}
+            title={photo.title}
           />
         );
       })}
